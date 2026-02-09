@@ -10,6 +10,14 @@ You win by **outthinking yourself through level design**.
 
 ---
 
+## Mirror Conflict
+
+**Mirror Conflict** is a 2D puzzle-action game where the player battles a mirrored version of themselves — every move and action is inverted, forcing the player to outthink their own behavior through strategic level design.
+
+🎮 **Play the demo:** https://255-ping.github.io/Mirror-Conflict/  
+
+This project includes the game source, assets, and build configuration so you can explore, modify, or extend the mechanics.
+
 ## Core Concept
 
 Each level spawns a mirrored opponent that exactly matches your inputs:
