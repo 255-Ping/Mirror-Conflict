@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bo3tw531j5ds4"]
+
+[ext_resource type="Texture2D" uid="uid://cdv8jykjnv03o" path="res://Textures/spikes.png" id="1_dp3q5"]
+[ext_resource type="Script" uid="uid://c6pnnn3u3jgq" path="res://Scripts/WorldObjects/spikes.gd" id="2_dd15k"]
+[ext_resource type="AudioStream" uid="uid://cr3bfeudrdlu6" path="res://Sounds/Sword Impact Hit 1.ogg" id="3_n1jp0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd15k"]
+atlas = ExtResource("1_dp3q5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1jp0"]
+size = Vector2(15, 13)
+
+[node name="Spikes" type="Sprite2D" unique_id=146703670]
+texture = SubResource("AtlasTexture_dd15k")
+script = ExtResource("2_dd15k")
+
+[node name="KillBox" type="Area2D" parent="." unique_id=2038734925]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillBox" unique_id=1273196691]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_n1jp0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2084413675]
+stream = ExtResource("3_n1jp0")
+
+[connection signal="body_entered" from="KillBox" to="." method="_on_kill_box_body_entered"]

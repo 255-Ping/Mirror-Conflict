@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://lq5upgp5rpxv"]
+
+[ext_resource type="Script" uid="uid://gfg5qauo6iho" path="res://Scripts/WorldObjects/button.gd" id="1_tp8d4"]
+[ext_resource type="Texture2D" uid="uid://binlyttacygst" path="res://Textures/bullet.png" id="2_e1c1x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yj65i"]
+
+[node name="Button" type="Area2D" unique_id=428713808 groups=["button"]]
+script = ExtResource("1_tp8d4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1073851554]
+shape = SubResource("CircleShape2D_yj65i")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1412007298]
+z_index = -1
+position = Vector2(-3, 4)
+rotation = -1.5707964
+texture = ExtResource("2_e1c1x")

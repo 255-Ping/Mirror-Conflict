@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://btv4rxxcl8pca"]
+
+[ext_resource type="Script" uid="uid://dnnlvkk4jluog" path="res://Scripts/step_particle.gd" id="1_w3tld"]
+
+[node name="StepParticle" type="Node2D" unique_id=1912594849]
+script = ExtResource("1_w3tld")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=901489367]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = 1.0
+color = Color(0.22370124, 0.46281004, 0.25507414, 1)

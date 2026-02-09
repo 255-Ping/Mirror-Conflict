@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c46n8ehqvfoh2"
+path="res://.godot/imported/Dirt Land.ogg-8cf0b2fe5b6544823d8a463ab1abf2d3.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Dirt Land.ogg"
+dest_files=["res://.godot/imported/Dirt Land.ogg-8cf0b2fe5b6544823d8a463ab1abf2d3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

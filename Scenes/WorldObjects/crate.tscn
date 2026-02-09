@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://chfh1fuxnev1e"]
+
+[ext_resource type="Script" uid="uid://b2ihjdinfyym8" path="res://Scripts/WorldObjects/crate.gd" id="1_i4r3v"]
+[ext_resource type="Texture2D" uid="uid://dj1wtx2xd0ir8" path="res://Textures/crate.png" id="1_wp72f"]
+[ext_resource type="AudioStream" uid="uid://bx2ne48q4aesf" path="res://Sounds/chop 3.ogg" id="3_ijghh"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7h5nd"]
+rough = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4r3v"]
+size = Vector2(13, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdp7h"]
+atlas = ExtResource("1_wp72f")
+region = Rect2(0, 0, 32.976227, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdp7h"]
+size = Vector2(15, 6)
+
+[node name="Crate" type="RigidBody2D" unique_id=1705872724 groups=["pushable"]]
+mass = 25.0
+physics_material_override = SubResource("PhysicsMaterial_7h5nd")
+can_sleep = false
+linear_damp = 2.0
+angular_damp = 2.0
+script = ExtResource("1_i4r3v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1103536825]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_i4r3v")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1866497862]
+texture = SubResource("AtlasTexture_rdp7h")
+
+[node name="KillBox" type="Area2D" parent="." unique_id=257408568]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillBox" unique_id=143861391]
+position = Vector2(0.5, 10)
+shape = SubResource("RectangleShape2D_rdp7h")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1061847671]
+stream = ExtResource("3_ijghh")
+volume_db = -10.0
+pitch_scale = 0.8
+
+[connection signal="body_entered" from="KillBox" to="." method="_on_kill_box_body_entered"]
