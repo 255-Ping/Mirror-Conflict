@@ -3,8 +3,7 @@
 **Mirror Conflict** is a puzzle-action game where you fight a perfect copy of yourself — except everything you do is mirrored.
 
 When you move left, your copy moves right.  
-When you jump, they jump.  
-When you shoot, they shoot.
+When you jump, they jump.
 
 You don’t win by being faster or stronger.  
 You win by **outthinking yourself through level design**.
@@ -17,7 +16,7 @@ Each level spawns a mirrored opponent that exactly matches your inputs:
 
 - Horizontal movement is inverted
 - Vertical movement is mirrored
-- Actions (jumping, shooting, interacting) are perfectly synced
+- Actions (jumping, interacting) are perfectly synced
 
 Your copy is not AI-driven — it is **you**.
 
@@ -45,7 +44,6 @@ Every failure is deterministic.
 
 - Move Left / Right
 - Jump
-- Shoot / Action
 
 All inputs are mirrored by the enemy in real time.
 
