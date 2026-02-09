@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://2mkbk51jel7j"]
 
-[ext_resource type="Script" uid="uid://2hjjsfgga81x" path="res://Scripts/Levels/level_4.gd" id="1_0fyhm"]
+[ext_resource type="Script" uid="uid://60lujglr8sje" path="res://Scripts/Levels/level_5.gd" id="1_reooa"]
 [ext_resource type="PackedScene" uid="uid://dgpyf7bo4yisg" path="res://Scenes/Players/player.tscn" id="2_evokg"]
 [ext_resource type="PackedScene" uid="uid://bf74ogoxwvf6m" path="res://Scenes/Players/opposite_player.tscn" id="3_3koi7"]
 [ext_resource type="Texture2D" uid="uid://ch3ss305qb2ma" path="res://Textures/tileset_forest.png" id="4_20kd1"]
@@ -67,7 +67,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_irfg1")
 
 [node name="Level5" type="Node2D" unique_id=1289005901]
-script = ExtResource("1_0fyhm")
+script = ExtResource("1_reooa")
 
 [node name="Player" parent="." unique_id=131008336 instance=ExtResource("2_evokg")]
 position = Vector2(-624, 39)
