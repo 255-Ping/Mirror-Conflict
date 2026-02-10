@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mirror Conflict"
-run/main_scene="uid://brql2yc6t8wm8"
+run/main_scene="uid://c84v36x4nwflp"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
@@ -22,6 +22,8 @@ SceneLoader="*uid://m85f3c35vh7o"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="viewport"
 
 [global_group]

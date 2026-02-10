@@ -37,11 +37,12 @@ func _physics_process(delta):
 
 	was_on_floor = on_floor
 	
-	if is_dying:
-		return
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+		
+	if is_dying:
+		return
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -171,3 +172,11 @@ func push(from_position: Vector2, force := 100.0):
 	#rotation_degrees = 0
 	velocity += dir * force
 	#apply_impulse(dir * force)
+
+
+func _on_reset_level_button_pressed() -> void:
+	SceneLoader.reload_current_scene()
+
+
+func _on_main_menu_button_pressed() -> void:
+	SceneLoader.load_scene("res://Scenes/Menus/main_menu.tscn")
