@@ -73,6 +73,9 @@ This project uses free assets from the following creators:
 - **Free Fantasy 200 SFX Pack** by TomMusic  
   https://tommusic.itch.io/free-fantasy-200-sfx-pack
 
+- **UNDER** by Prinbles  
+  https://prinbles.itch.io/under
+
 All assets are used in accordance with their respective licenses.  
 Full credit goes to the original creators.
 
