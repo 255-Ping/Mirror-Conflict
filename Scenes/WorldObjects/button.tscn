@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://gfg5qauo6iho" path="res://Scripts/WorldObjects/button.gd" id="1_tp8d4"]
 [ext_resource type="Texture2D" uid="uid://binlyttacygst" path="res://Textures/bullet.png" id="2_e1c1x"]
+[ext_resource type="AudioStream" uid="uid://ba6avtxabfqeu" path="res://Sounds/Gate Open.ogg" id="3_e1c1x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yj65i"]
 
@@ -16,3 +17,6 @@ z_index = -1
 position = Vector2(-3, 4)
 rotation = -1.5707964
 texture = ExtResource("2_e1c1x")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=336717758]
+stream = ExtResource("3_e1c1x")

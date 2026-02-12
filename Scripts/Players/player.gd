@@ -164,6 +164,7 @@ func _on_push_box_area_entered(area: Area2D) -> void:
 		return
 	if !area.is_in_group("button"):
 		return
+	area.play_sound()
 	emit_signal("door_triggered", area.door_id)
 	
 func push(from_position: Vector2, force := 100.0):

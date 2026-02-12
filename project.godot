@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 SceneLoader="*uid://m85f3c35vh7o"
+SoundPing="*uid://ce0xwbcc4rbim"
 
 [display]
 
