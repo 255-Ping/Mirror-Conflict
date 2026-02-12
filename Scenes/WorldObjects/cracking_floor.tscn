@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dnocf4y0k66qt"]
+
+[ext_resource type="Script" uid="uid://cmphyeht2gstt" path="res://Scripts/WorldObjects/cracking_floor.gd" id="1_1wi7a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nbv5r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1wi7a"]
+size = Vector2(16, 16)
+
+[node name="CrackingFloor" type="Node2D" unique_id=50980322]
+script = ExtResource("1_1wi7a")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1971163121]
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="DetectionBox" type="Area2D" parent="." unique_id=1372486501]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBox" unique_id=1909363512]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_nbv5r")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=479187132]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=736664711]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_1wi7a")
+
+[connection signal="body_entered" from="DetectionBox" to="." method="_on_detection_box_body_entered"]

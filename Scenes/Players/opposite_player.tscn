@@ -162,6 +162,7 @@ radius = 8.0
 
 [node name="OppositePlayer" type="CharacterBody2D" unique_id=1400376986 groups=["player"]]
 z_index = 1
+collision_layer = 2
 script = ExtResource("1_86y1o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=41796505]

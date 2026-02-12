@@ -60,6 +60,9 @@ All inputs are mirrored by the enemy in real time.
 ## Assets & Credits
 
 This project uses free assets from the following creators:
+	
+- **Menu Assets** by Kade404  
+  https://kade404.itch.io/
 
 - **Pixel RPG Free NPC Pack** by Snoblin  
   https://snoblin.itch.io/pixel-rpg-free-npc
@@ -72,9 +75,6 @@ This project uses free assets from the following creators:
 
 - **Free Fantasy 200 SFX Pack** by TomMusic  
   https://tommusic.itch.io/free-fantasy-200-sfx-pack
-
-- **Menu Assets** by Kade404  
-  https://kade404.itch.io/
 
 - **UNDER** by Prinbles  
   https://prinbles.itch.io/under

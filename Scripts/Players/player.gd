@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 250.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 200.0
+const JUMP_VELOCITY = -375.0
 
 var pushing_targets: Array
 

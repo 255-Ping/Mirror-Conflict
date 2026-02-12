@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 SceneLoader="*uid://m85f3c35vh7o"
 SoundPing="*uid://ce0xwbcc4rbim"
+MusicPlayer="*uid://14vk4tt8qjpo"
 
 [display]
 

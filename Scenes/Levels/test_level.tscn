@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://0jmcno1mon6y" path="res://Textures/Backgrounds/mountains_b.png" id="4_7rivk"]
 [ext_resource type="Texture2D" uid="uid://brrx1ej75qytg" path="res://Textures/Backgrounds/trees.png" id="5_hyk2w"]
 [ext_resource type="PackedScene" uid="uid://chfh1fuxnev1e" path="res://Scenes/WorldObjects/crate.tscn" id="6_mvu5i"]
+[ext_resource type="PackedScene" uid="uid://dnocf4y0k66qt" path="res://Scenes/WorldObjects/cracking_floor.tscn" id="8_l7ek2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xxcax"]
 texture = ExtResource("3_l7ek2")
@@ -92,3 +93,6 @@ texture = ExtResource("5_hyk2w")
 
 [node name="Crate" parent="." unique_id=1705872724 instance=ExtResource("6_mvu5i")]
 position = Vector2(-110, -59)
+
+[node name="CrackingFloor" parent="." unique_id=50980322 instance=ExtResource("8_l7ek2")]
+position = Vector2(48, -40)

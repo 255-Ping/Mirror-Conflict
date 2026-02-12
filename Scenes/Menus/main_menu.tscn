@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://c84v36x4nwflp"]
 
 [ext_resource type="Script" uid="uid://dy465hd1gd0qp" path="res://Scripts/Levels/main_menu.gd" id="1_penys"]
-[ext_resource type="Texture2D" uid="uid://bmftx04wdc5mb" path="res://Textures/png/Buttons/Rect/PlayText/Default.png" id="1_pha2q"]
-[ext_resource type="Texture2D" uid="uid://b6kneq2ycmrmg" path="res://Textures/png/Buttons/Rect/PlayText/Hover.png" id="2_penys"]
+[ext_resource type="Texture2D" uid="uid://2obgfw18ptp2" path="res://Textures/menu-panel-atlas.png" id="2_penys"]
+[ext_resource type="FontFile" uid="uid://bnlm4uxm0efox" path="res://Textures/Fonts/monogram.ttf" id="3_aur2u"]
 [ext_resource type="FontFile" uid="uid://18okmp73gjds" path="res://Textures/Fonts/ChangaOne-Regular.ttf" id="4_aur2u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aur2u"]
+atlas = ExtResource("2_penys")
+region = Rect2(15, 470, 530, 165)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wi6m"]
+atlas = ExtResource("2_penys")
+region = Rect2(643.99976, 461.73407, 526.14746, 163.26593)
 
 [node name="MainMenu" type="Node2D" unique_id=622802778]
 script = ExtResource("1_penys")
@@ -15,12 +23,24 @@ offset_bottom = 720.0
 color = Color(0.2159017, 0.21590173, 0.21590167, 1)
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=1019069374]
-offset_left = 560.0
-offset_top = 200.0
-offset_right = 720.0
-offset_bottom = 283.0
-texture_normal = ExtResource("1_pha2q")
-texture_hover = ExtResource("2_penys")
+offset_left = 433.00003
+offset_top = 190.00002
+offset_right = 962.0
+offset_bottom = 354.0
+scale = Vector2(0.75, 0.75)
+texture_normal = SubResource("AtlasTexture_aur2u")
+texture_hover = SubResource("AtlasTexture_5wi6m")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureButton" unique_id=2108576215]
+layout_mode = 0
+offset_left = 169.3333
+offset_top = 15.999978
+offset_right = 608.00006
+offset_bottom = 174.66664
+theme_override_fonts/normal_font = ExtResource("3_aur2u")
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "Play"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1945636842]
 offset_left = 222.0

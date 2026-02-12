@@ -71,6 +71,7 @@ script = ExtResource("1_reooa")
 
 [node name="Player" parent="." unique_id=131008336 instance=ExtResource("2_evokg")]
 position = Vector2(-624, 39)
+collision_layer = 2
 
 [node name="OppositePlayer" parent="." unique_id=1400376986 instance=ExtResource("3_3koi7")]
 position = Vector2(-355, 55)
