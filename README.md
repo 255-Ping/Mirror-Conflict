@@ -8,6 +8,9 @@ When you jump, they jump.
 You don’t win by being faster or stronger.  
 You win by **outthinking yourself through level design**.
 
+This project was created for a game jam
+- https://itch.io/jam/theham-jam-1
+
 ---
 
 ## Mirror Conflict
