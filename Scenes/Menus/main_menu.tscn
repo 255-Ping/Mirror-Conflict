@@ -22,7 +22,7 @@ offset_right = 1280.0
 offset_bottom = 720.0
 color = Color(0.2159017, 0.21590173, 0.21590167, 1)
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1019069374]
+[node name="PlayButton" type="TextureButton" parent="." unique_id=1019069374]
 offset_left = 433.00003
 offset_top = 190.00002
 offset_right = 962.0
@@ -31,16 +31,38 @@ scale = Vector2(0.75, 0.75)
 texture_normal = SubResource("AtlasTexture_aur2u")
 texture_hover = SubResource("AtlasTexture_5wi6m")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="TextureButton" unique_id=2108576215]
+[node name="RichTextLabel" type="RichTextLabel" parent="PlayButton" unique_id=2108576215]
 layout_mode = 0
 offset_left = 169.3333
 offset_top = 15.999978
 offset_right = 608.00006
 offset_bottom = 174.66664
+mouse_filter = 2
 theme_override_fonts/normal_font = ExtResource("3_aur2u")
 theme_override_font_sizes/normal_font_size = 128
 bbcode_enabled = true
 text = "Play"
+
+[node name="QuitButton" type="TextureButton" parent="." unique_id=1973257344]
+offset_left = 433.0
+offset_top = 509.0
+offset_right = 963.0
+offset_bottom = 674.0
+scale = Vector2(0.75, 0.75)
+texture_normal = SubResource("AtlasTexture_aur2u")
+texture_hover = SubResource("AtlasTexture_5wi6m")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="QuitButton" unique_id=304264184]
+layout_mode = 0
+offset_left = 169.3333
+offset_top = 15.999978
+offset_right = 608.00006
+offset_bottom = 174.66664
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_aur2u")
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "Quit"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1945636842]
 offset_left = 222.0
@@ -52,4 +74,5 @@ theme_override_font_sizes/normal_font_size = 128
 bbcode_enabled = true
 text = "Mirror Conflict"
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
