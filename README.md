@@ -76,6 +76,9 @@ This project uses free assets from the following creators:
 - **Menu Assets** by Kade404  
   https://kade404.itch.io/
 
+- **UNDER** by Prinbles  
+  https://prinbles.itch.io/under
+
 All assets are used in accordance with their respective licenses.  
 Full credit goes to the original creators.
 
