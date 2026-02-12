@@ -73,7 +73,7 @@ This project uses free assets from the following creators:
 - **Free Fantasy 200 SFX Pack** by TomMusic  
   https://tommusic.itch.io/free-fantasy-200-sfx-pack
 
-- **Menu Assets** by Kade404
+- **Menu Assets** by Kade404  
   https://kade404.itch.io/
 
 All assets are used in accordance with their respective licenses.  
