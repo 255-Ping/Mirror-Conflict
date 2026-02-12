@@ -79,6 +79,9 @@ This project uses free assets from the following creators:
 - **UNDER** by Prinbles  
   https://prinbles.itch.io/under
 
+- **Yet Another Free Music Pack** by clementpanchout  
+  https://clement-panchout.itch.io/yet-another-free-music-pack
+
 All assets are used in accordance with their respective licenses.  
 Full credit goes to the original creators.
 
