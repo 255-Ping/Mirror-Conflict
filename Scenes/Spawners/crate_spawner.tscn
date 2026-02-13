@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://wvm73mnkqwq4"]
+
+[ext_resource type="Script" uid="uid://pajm8qofhv7v" path="res://Scripts/crate_spawner.gd" id="1_7qa4b"]
+
+[node name="CrateSpawner" type="Node2D" unique_id=672882985]
+script = ExtResource("1_7qa4b")

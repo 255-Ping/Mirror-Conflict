@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cmphyeht2gstt" path="res://Scripts/WorldObjects/cracking_floor.gd" id="1_1wi7a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nbv5r"]
+size = Vector2(18, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1wi7a"]
 size = Vector2(16, 16)
@@ -15,9 +16,10 @@ offset_right = 16.0
 offset_bottom = 16.0
 
 [node name="DetectionBox" type="Area2D" parent="." unique_id=1372486501]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionBox" unique_id=1909363512]
-position = Vector2(8, 8)
+position = Vector2(8, 5.5)
 shape = SubResource("RectangleShape2D_nbv5r")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=479187132]
